@@ -1,0 +1,12 @@
+<div>
+   
+   <div appPaint color="gray" style="width: 500px; height: 300px; border-color:blue ; border-style:solid; ">
+     <p>Demostrate Directive to change style with mouse over listener</p>
+   </div>
+   
+   
+    <mat-calendar [(selected)]="selectedDate"></mat-calendar>
+   {{selectedDate.toLocaleDateString()}}
+    <a [routerLink]="['/tasks', {date:selectedDate}]"> Tasks</a>
+   
+</div>
